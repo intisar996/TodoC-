@@ -1,0 +1,29 @@
+﻿ @model TodoList
+
+  <br /><br /><br /><br /><br /><br />
+ <div class="form">
+      <form method="post"  asp-controller="Todo" asp-action="Index">
+        <label for="name">Task Name:</label><br>
+        <input type="text" asp-for="Title" name="Title"  class="inputName"  id="name"  placeholder="Enter Task Name"  required/><br>
+        <br>
+        <label for="Description">Description:</label><br>
+        <textarea asp-for="Description" name="Description" id="Description" class="inputDes"   cols="30" rows="10" required></textarea><br>
+        <br>
+        <label for="Description">Finish Time </label><br>
+        <input type="time" class="inputTim" asp-for="Time" name="Time"   required/><br>
+        <label for="day">Day </label><br>
+        <select asp-for="day" name="day" id="day" class="inputday">
+            <option value="Saturday">Saturday</option>
+            <option value="Sunday">Sunday</option>
+            <option value="Monday">Monday</option>
+            <option value="Tuesday">Tuesday</option>
+            <option value="Wednesday">Wednesday</option>
+            <option value="Thursday">Thursday</option>
+            <option value="Friday">Friday</option>
+        </select>
+        <br>
+        <input type="submit" class="add"  value="Update Task" />
+        </form>
+      </div>
+
+    <br>

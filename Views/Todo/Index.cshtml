@@ -1,0 +1,115 @@
+﻿ @model List<TodoList>
+ using SweetAlert;
+
+
+  <br /><br /><br /><br /><br /><br />
+ <div class="form">
+      <form method="post"  asp-controller="Todo" asp-action="Index">
+        <label for="name">Task Name:</label><br>
+        <input type="text" name="Title"  class="inputName"  id="name"  placeholder="Enter Task Name"  required/><br>
+        <br>
+        <label for="Description">Description:</label><br>
+        <textarea name="Description" id="Description" class="inputDes"   cols="30" rows="10" required></textarea><br>
+        <br>
+        <label for="Description">Finish Time </label><br>
+        <input type="time" class="inputTim" name="Time"   required/><br>
+        <label for="day">Day </label><br>
+        <select name="day" id="day" class="inputday">
+            <option value="Saturday">Saturday</option>
+            <option value="Sunday">Sunday</option>
+            <option value="Monday">Monday</option>
+            <option value="Tuesday">Tuesday</option>
+            <option value="Wednesday">Wednesday</option>
+            <option value="Thursday">Thursday</option>
+            <option value="Friday">Friday</option>
+        </select>
+        <br>
+        <input type="submit" class="add"  value="Add Task" />
+        </form>
+      </div>
+
+ 
+
+
+
+
+    <br>
+
+    <hr>
+   <div class="tolist">
+    @foreach (var item in Model)
+    {
+        <div class="day">
+            @if (item.day == "Saturday")
+            {
+                <h3 id="Saturday">Saturday</h3>
+                <p id="tname">Task Name: @item.Title</p>
+                <p id="tdes">Description: @item.Description</p>
+                <p id="ftime">Finish Time: @item.Time</p>
+                <a class="btn btn-info " asp-controller="Todo"   asp-action="Update" asp-route-id="@item.Id"> Update </a>
+                <a class="btn btn-danger " asp-controller="Todo" asp-action="Delete" asp-route-id="@item.Id"> Delete </a>
+            }
+            else if (item.day == "Sunday")
+            {
+                <h3 id="Sunday">Sunday</h3>
+                <p id="tname">Task Name: @item.Title</p>
+                <p id="tdes">Description: @item.Description</p>
+                <p id="ftime">Finish Time: @item.Time</p>
+                <a class="btn btn-info " asp-controller="Todo"   asp-action="Update" asp-route-id="@item.Id"> Update </a>
+                <a class="btn btn-danger " asp-controller="Todo" asp-action="Delete" asp-route-id="@item.Id"> Delete </a>
+            }
+            else if (item.day == "Monday")
+            {
+                <h3 id="Monday">Monday</h3>
+                <p id="tname">Task Name: @item.Title</p>
+                <p id="tdes">Description: @item.Description</p>
+                <p id="ftime">Finish Time: @item.Time</p>
+                <a class="btn btn-info " asp-controller="Todo"   asp-action="Update" asp-route-id="@item.Id"> Update </a>
+                <a class="btn btn-danger " asp-controller="Todo" asp-action="Delete" asp-route-id="@item.Id"> Delete </a>
+
+            }
+            else if (item.day == "Tuesday")
+            {
+                <h3 id="Tuesday">Tuesday</h3>
+                <p id="tname">Task Name: @item.Title</p>
+                <p id="tdes">Description: @item.Description</p>
+                <p id="ftime">Finish Time: @item.Time</p>
+                <a class="btn btn-info " asp-controller="Todo"   asp-action="Update" asp-route-id="@item.Id"> Update </a>
+                <a class="btn btn-danger " asp-controller="Todo" asp-action="Delete" asp-route-id="@item.Id"> Delete </a>
+            
+            }
+            else if (item.day == "Wednesday")
+            {
+                <h3 id="Wednesday">Wednesday</h3>
+                <p id="tname">Task Name: @item.Title</p>
+                <p id="tdes">Description: @item.Description</p>
+                <p id="ftime">Finish Time: @item.Time</p>
+                <a class="btn btn-info " asp-controller="Todo"   asp-action="Update" asp-route-id="@item.Id"> Update </a>
+                <a class="btn btn-danger " asp-controller="Todo" asp-action="Delete" asp-route-id="@item.Id"> Delete </a>
+            }
+            else if (item.day == "Thursday")
+            {
+                <h3 id="Thursday">Thursday</h3>
+                <p id="tname">Task Name: @item.Title</p>
+                <p id="tdes">Description: @item.Description</p>
+                <p id="ftime">Finish Time: @item.Time</p>
+                <a class="btn btn-info " asp-controller="Todo"   asp-action="Update" asp-route-id="@item.Id"> Update </a>
+                <a class="btn btn-danger " asp-controller="Todo" asp-action="Delete" asp-route-id="@item.Id"> Delete </a>
+            }
+            else
+            {
+                <h3 id="Friday">Friday</h3>
+                <p id="tname">Task Name: @item.Title</p>
+                <p id="tdes">Description: @item.Description</p>
+                <p id="ftime">Finish Time: @item.Time</p>
+                <a class="btn btn-info " asp-controller="Todo" asp-action="Update" asp-route-id="@item.Id"> Update </a>
+                <a class="btn btn-danger " asp-controller="Todo" asp-action="Delete" asp-route-id="@item.Id"> Delete </a>
+            }
+        </div>
+    }
+</div>
+
+   
+ <hr>
+ <br>
+ <br>

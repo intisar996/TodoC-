@@ -1,0 +1,252 @@
+@import url(https://fonts.bunny.net/css?family=barrio:400);
+@import url(https://fonts.bunny.net/css?family=aclonica:400);
+@import url(https://fonts.bunny.net/css?family=alegreya-sc:400);
+
+
+body {
+    margin: 0px;
+    background-color: #F9F5E7;
+    background-size: cover;
+    background-attachment: scroll;
+}
+/* start Nav Bar */
+nav {
+    padding: 21px 11px 7px 11px;
+    display: flex !important;
+    justify-content: space-between;
+    background-color: #A7727D;
+    height: 77px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: fixed;
+    width: 100%;
+}
+
+.left {
+    display: flex;
+}
+
+    .left img {
+        width: 72px;
+        height: 60px;
+        margin-right: 19px;
+        position: relative;
+        top: -13px;
+    }
+
+    .left h1 {
+        font-family: 'Barrio', display;
+        color: #000000;
+        font-size: 30px;
+        color: #000000;
+        text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
+    }
+
+.right {
+    width: 50%;
+}
+
+    .right ul {
+        display: flex;
+        justify-content: center;
+    }
+
+        .right ul li {
+            font-family: 'Aclonica', sans-serif;
+            list-style: none;
+            font-size: 25px;
+            margin-right: 20px;
+        }
+
+            .right ul li:hover {
+                content: "";
+                border-bottom: 2px solid #000000;
+                width: 100px;
+                height: 20px;
+            }
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+/* End Navbar */
+
+/* start Header */
+header {
+    display: flex !important;
+    padding: 140px 44px 23px;
+}
+
+.lefts {
+    width: 50%;
+    padding-top: 64px;
+}
+
+    .lefts h1 {
+        font-family: 'Aclonica', sans-serif;
+        letter-spacing: 7px;
+        line-height: 80px;
+        font-size: 45px;
+    }
+
+    .lefts p {
+        font-family: 'Alegreya SC', serif;
+        font-size: 29px;
+    }
+
+    .lefts button {
+        font-size: 23px;
+        font-weight: 700;
+        color: #ffffff;
+        border-radius: 16px;
+        line-height: 24px;
+        text-decoration: none solid rgb(90, 60, 66);
+        text-align: center;
+        background: #A7727D;
+        box-shadow: inset 0 -4px 0 #c0a0a6;
+        height: 71.2px;
+        width: 173.45px;
+        border: 2px outset #FFF3E0;
+        padding: 22px 17px 22px 9px !important;
+        display: inline-block;
+        cursor: pointer;
+        outline: rgb(90, 60, 66) none 0px;
+        -webkit-border-radius: 16px;
+        -moz-border-radius: 16px;
+        -ms-border-radius: 16px;
+        -o-border-radius: 16px;
+    }
+
+.rights {
+    width: 50%;
+}
+
+    .rights img {
+        width: 83%;
+        margin-left: 23px;
+    }
+
+
+/* End Header */
+
+/* study section    */
+.Study {
+    display: flex;
+    padding: 20px;
+}
+
+.studyimg {
+    width: 40%;
+}
+
+    .studyimg img {
+        width: 108%;
+        height: 100%;
+    }
+
+.studytext {
+    padding: 10px;
+    width: 85%;
+}
+
+    .studytext h2 {
+        font-size: 27px;
+        font-family: 'Aclonica';
+    }
+
+    .studytext p {
+        font-size: 25px;
+        font-family: 'Alegreya SC';
+        line-height: 31px;
+    }
+
+    .studytext ul li {
+        font-size: 19px;
+        font-family: 'Aclonica';
+        line-height: 24px;
+        margin-bottom: 19px;
+    }
+
+/* Toolist */
+.form {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 546px;
+    margin-left: 403px;
+    border-radius: 14px;
+    background-color: ivory;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+input[type="text"], input[type="time"], select {
+    width: 369px;
+    height: 51px;
+    padding: 5px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    padding: 5px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+label {
+    font-size: 28px;
+}
+
+.add {
+    margin-top: 15px;
+    font-size: 23px;
+    font-weight: 700;
+    color: #ffffff;
+    border-radius: 16px;
+    line-height: 24px;
+    text-decoration: none solid rgb(90, 60, 66);
+    text-align: center;
+    background: #A7727D;
+    box-shadow: inset 0 -4px 0 #c0a0a6;
+    height: 71.2px;
+    width: 173.45px;
+    border: 2px outset #FFF3E0;
+    padding: 22px 17px 22px 9px !important;
+    display: inline-block;
+    cursor: pointer;
+    outline: rgb(90, 60, 66) none 0px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+}
+
+.tolist {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 10px;
+}
+
+    .tolist div {
+        border: 2px solid #b0a3a3;
+        border-radius: 13px;
+        width: 90%;
+        height: fit-content;
+        padding: 12px;
+        overflow: hidden;
+        margin-bottom: 10px;
+    }
+textarea {
+    padding: 5px;
+    width: 100%;
+    height: 160px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
